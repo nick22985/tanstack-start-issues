@@ -14,7 +14,7 @@ export function getRouter(): ReturnType<typeof routerWithQueryClient> {
 
 	const router = createTanStackRouter({
 		routeTree,
-		context: { queryClient },
+		context: { queryClient, auth: null },
 		defaultPreload: "intent",
 		// react-query will handle data fetching & caching
 		// https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#passing-all-loader-events-to-an-external-cache
