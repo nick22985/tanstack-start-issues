@@ -10,6 +10,6 @@ export const testMiddleware = createMiddleware({ type: "function" }).server(
 	async ({ next, context }) => {
 		console.log("context", context);
 
-		return next({ context: { user: "test" } });
+		return next({ context: { auth: "test2", user: "test" } });
 	},
 );
