@@ -3,12 +3,11 @@ import * as TanstackQuery from "./integrations/tanstack-query/root-provider";
 import { setupRouterSsrQueryIntegration } from "@tanstack/react-router-ssr-query";
 
 import { createRouter as createTanStackRouter } from "@tanstack/react-router";
-import type { routerWithQueryClient } from "@tanstack/react-router-with-query";
 import { DefaultCatchBoundary } from "~/components/DefaultCatchBoundary";
 import { NotFound } from "~/components/NotFound";
 import { routeTree } from "./routeTree.gen";
 
-export function getRouter(): ReturnType<typeof routerWithQueryClient> {
+export function getRouter() {
 	const rqContext = TanstackQuery.getContext();
 	const queryClient = rqContext.queryClient;
 
