@@ -1,7 +1,10 @@
 import { createServerFn } from "@tanstack/react-start";
+import { test3Middleware } from "~/start";
 
 export const getPublicCategories = createServerFn({
 	method: "GET",
-}).handler(async () => {
-	return [];
-});
+})
+	.middleware([test3Middleware])
+	.handler(async ({ context }) => {
+		return [];
+	});
