@@ -13,3 +13,11 @@ export const testMiddleware = createMiddleware({ type: "function" }).server(
 		return next({ context: { auth: "test2", user: "test" } });
 	},
 );
+
+export const test2Middleware = createMiddleware({ type: "function" }).server(
+	async ({ next, context }) => {
+		console.log("context", context);
+
+		return next({ context: { auth: "test2", user: "test" } });
+	},
+);

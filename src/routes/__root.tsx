@@ -27,15 +27,13 @@ export const Route = createRootRouteWithContext<{
 	},
 	loader: async ({ context }) => {
 		return {
-			// auth: context.auth,
+			auth: context.auth,
 		};
 	},
 	component: RootComponent,
 });
 
 function RootComponent() {
-	const { auth } = Route.useLoaderData();
-
 	return (
 		<RootDocument>
 			<Header />
