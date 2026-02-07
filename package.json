@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@eslint-react/eslint-plugin": "^2.3.5",
-		"@eslint/js": "^9.39.1",
+		"@eslint/js": "^10.0.0",
 		"@tailwindcss/vite": "^4.1.17",
 		"@tanstack/eslint-plugin-query": "^5.91.2",
 		"@tanstack/eslint-plugin-router": "^1.133.19",
@@ -35,7 +35,7 @@
 		"@types/react": "^19.2.5",
 		"@types/react-dom": "^19.2.3",
 		"babel-plugin-react-compiler": "latest",
-		"eslint": "^9.39.1",
+		"eslint": "^10.0.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-react-hooks": "7.0.1",
 		"prettier": "^3.6.2",
