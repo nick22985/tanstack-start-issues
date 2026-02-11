@@ -3,6 +3,7 @@ import * as TanstackQuery from "./integrations/tanstack-query/root-provider";
 import { setupRouterSsrQueryIntegration } from "@tanstack/react-router-ssr-query";
 
 import { createRouter as createTanStackRouter } from "@tanstack/react-router";
+import { getCookie } from "@tanstack/react-start/server";
 import { DefaultCatchBoundary } from "~/components/DefaultCatchBoundary";
 import { NotFound } from "~/components/NotFound";
 import { routeTree } from "./routeTree.gen";
@@ -11,6 +12,7 @@ export function getRouter() {
 	const rqContext = TanstackQuery.getContext();
 	const queryClient = rqContext.queryClient;
 
+	const consent = getCookie("cookie-consent");
 	const router = createTanStackRouter({
 		routeTree,
 		context: { queryClient, auth: null },
