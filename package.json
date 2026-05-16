@@ -35,7 +35,7 @@
 		"@types/react": "^19.2.5",
 		"@types/react-dom": "^19.2.3",
 		"babel-plugin-react-compiler": "latest",
-		"eslint": "^9.39.1",
+		"eslint": "^10.4.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-react-hooks": "7.0.1",
 		"prettier": "^3.6.2",
